@@ -13,5 +13,6 @@ modalX.addEventListener("click", function () {
 });
 
 document.addEventListener("keydown", function (e) {
-  console.log(e.key);
+  if ("keydown"=== Esc) {   
+  console.log(e.key);}
 });
