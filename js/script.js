@@ -14,7 +14,7 @@ modalX.addEventListener("click", function () {
 
 document.addEventListener("keydown", function (e) {
   //console.log(e.key);
-  if ("keydown"=== Esc) {   
+  if (e.key === "Escape") {   
     if (modal.classList.contains("show-modal")) {
       closeModal();
     }
