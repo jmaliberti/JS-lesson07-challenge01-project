@@ -7,9 +7,13 @@ var closeModal = function () {
   button.innerText = "Who's got this?";
 };
 
-button.addEventListener("click", function () {
+var openModal = function () {
   modal.classList.add("show-modal");
   button.innerText = "You've got this!!!";
+}
+
+button.addEventListener("click", function () {
+  openModal();
 });
 
 modalX.addEventListener("click", function () {
@@ -20,6 +24,14 @@ document.addEventListener("keydown", function (e) {
   //console.log(e.key);
   if (e.key === "Escape") {   
     closeModal();
+    }
+  }
+);
+
+document.addEventListener("keydown", function (e) {
+  //console.log(e.key);
+  if (e.key === "y") {   
+    openModal();
     }
   }
 );
