@@ -5,7 +5,7 @@ var modalX = document.querySelector(".modal-x");
 var closeModal = function () {
   modal.classList.remove("show-modal");
   button.innerText = "Who's got this?";
-}
+};
 
 button.addEventListener("click", function () {
   modal.classList.add("show-modal");
@@ -13,13 +13,13 @@ button.addEventListener("click", function () {
 });
 
 modalX.addEventListener("click", function () {
-  closeModal()
+  closeModal();
 });
 
 document.addEventListener("keydown", function (e) {
   //console.log(e.key);
   if (e.key === "Escape") {   
-    closeModal()
+    closeModal();
     }
   }
 );
